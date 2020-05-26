@@ -1,4 +1,4 @@
-## springboot-kafka
+## Springboot-kafka
 My project includes the use of springboot application with kafka instance to publish messages.my project uses spring boot tp publish messages into kafka topic i used kafka templete into spring boot application to publish messages.Once you publish messages through spring boot into kafka topic messages are consumed into consumer
 ## Team members
 - JeevanReddy Mure
@@ -22,3 +22,6 @@ My project includes the use of springboot application with kafka instance to pub
 4. Start the consumer listening to kafka topic
     `.\bin\windows\kafka-console-consumer.bat --bootstrap-server localhost:9092 --topic java-topic --from-beginning`
 5. open the url in your browser [http://localhost:8085//publish-kafka/producer?message=example](http://localhost:8080//javainuse-kafka/producer?message=test)
+## Refrences
+  - [https://github.com/TechPrimers/spring-boot-kafka-producer-example](https://github.com/TechPrimers/spring-boot-kafka-producer-example)
+ -  [https://www.javainuse.com/spring/spring-boot-apache-kafka-hello-world](https://www.javainuse.com/spring/spring-boot-apache-kafka-hello-world)
