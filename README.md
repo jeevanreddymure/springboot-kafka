@@ -14,12 +14,16 @@ My project includes the use of springboot application with kafka instance to pub
 - spring starter
 ## Steps to start the application
 1. First Start Apache Zookeeper
-   `.\bin\windows\zookeeper-server-start.bat .\config\zookeeper.properties` 
+
+    `.\bin\windows\zookeeper-server-start.bat .\config\zookeeper.properties` 
 2. Next Run Kafka service from kafka directory 
+
       `.\bin\windows\kafka-server-start.bat .\config\server.properties`
 3. Create a kafka topic to publish messages
+
      ` .\bin\windows\kafka-topics.bat --zookeeper localhost:2181 --replication-factor 1 --partitions 1 --create --topic java-topic`
 4. Start the consumer listening to kafka topic
+
     `.\bin\windows\kafka-console-consumer.bat --bootstrap-server localhost:9092 --topic java-topic --from-beginning`
 5. open the url in your browser [http://localhost:8085//publish-kafka/producer?message=example](http://localhost:8085//publish-kafka/producer?message=example)
 ## Refrences
