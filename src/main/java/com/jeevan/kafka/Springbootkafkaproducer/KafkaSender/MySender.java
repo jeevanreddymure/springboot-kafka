@@ -12,8 +12,8 @@ public class MySender {
 	
 	String kafkaTopic = "java-topic";
 	
-	public void send(String message) {
+	public void send(String Message) {
 	    
-	    kafkaTemplate.send(kafkaTopic, message);
+	    kafkaTemplate.send(kafkaTopic, Message);
 	}
 }
