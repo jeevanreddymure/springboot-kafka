@@ -21,10 +21,10 @@ My project includes the use of springboot application with kafka instance to pub
       `.\bin\windows\kafka-server-start.bat .\config\server.properties`
 3. Create a kafka topic to publish messages
 
-     ` .\bin\windows\kafka-topics.bat --zookeeper localhost:2181 --replication-factor 1 --partitions 1 --create --topic java-topic`
-4. Start the consumer listening to kafka topic
+     ` .\bin\windows\kafka-topics.bat --zookeeper localhost:2181 --replication-factor 1 --partitions 1 --create --topic spring-boot`
+4. Start the consumer listening to spring-boot topic
 
-    `.\bin\windows\kafka-console-consumer.bat --bootstrap-server localhost:9092 --topic java-topic --from-beginning`
+    `.\bin\windows\kafka-console-consumer.bat --bootstrap-server localhost:9092 --topic spring-boot --from-beginning`
 5. open the url in your browser [http://localhost:8085//publish-kafka/producer?message=example](http://localhost:8085//publish-kafka/producer?message=example)
 ## Refrences
   - [https://github.com/TechPrimers/spring-boot-kafka-producer-example](https://github.com/TechPrimers/spring-boot-kafka-producer-example)
