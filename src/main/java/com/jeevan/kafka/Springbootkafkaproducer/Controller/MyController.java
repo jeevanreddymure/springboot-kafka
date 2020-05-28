@@ -18,8 +18,8 @@ public class MyController {
 	MySender kafkaSender;
 
 	@GetMapping(value = "/producer")
-	public String producer(@RequestParam("message") String Message) {
-		kafkaSender.send("hello your message is : "+Message);
+	public String producer(@RequestParam("message") String message) {
+		kafkaSender.send("hello your message is : "+message);
 
 		return "Message sent to the Kafka topic Successfully please check the consumer kafka console in your machine";
 	}
